@@ -307,8 +307,7 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
+.avatar-box img{
   border-radius: 20px;
 }
 
@@ -563,12 +562,11 @@ main {
    scroll-snap-align: center;
  }
  
- .testimonials-avatar-box {
+ .testimonials-avatar-box > img{
    position: absolute;
    top: 0;
    left: 0;
    transform: translate(15px, -25px);
-   background: var(--bg-gradient-onyx);
    border-radius: 14px;
    box-shadow: var(--shadow-1);
  }
@@ -677,8 +675,7 @@ main {
 
 .modal-close-btn .ion-icon { --ionicon-stroke-width: 50px; }
 
-.modal-avatar-box {
-  background: var(--bg-gradient-onyx);
+.modal-avatar-box > img{
   width: max-content;
   border-radius: 14px;
   margin-bottom: 15px;
@@ -1411,7 +1408,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-top: 25px;
   }
 
-  .testimonials-avatar-box {
+  .testimonials-avatar-box > img{
     transform: translate(30px, -30px);
     border-radius: 20px;
   }
@@ -1447,7 +1444,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     align-items: center;
   }
 
-  .modal-avatar-box {
+  .modal-avatar-box > img {
     border-radius: 18px;
     margin-bottom: 0;
   }

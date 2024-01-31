@@ -19,7 +19,6 @@ import quote from "@/public/icon-quote.svg"
 import Link from "next/link"
 import { useState } from "react"
 import { IoCloseOutline } from "react-icons/io5"
-import { IoCalendarOutline, IoChevronDown, IoLocationOutline, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoMailOutline, IoPhonePortraitOutline } from "react-icons/io5"
 
 export default function About(){
 
@@ -62,9 +61,8 @@ export default function About(){
 
         <section className="about-text">
         <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I'm a Programmer and I am currently working in web development and tech sector.
+            I enjoy turning complex problems into simple, beautiful and intuitive things.
         </p>
 
         <p>

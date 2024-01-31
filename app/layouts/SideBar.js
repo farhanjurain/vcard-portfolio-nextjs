@@ -1,7 +1,7 @@
 "use client"
 
 import "@/app/globals.css";
-import {IoCalendarOutline, IoChevronDown, IoLocationOutline, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoMailOutline, IoPhonePortraitOutline } from "react-icons/io5";
+import {IoCalendarOutline, IoChevronDown, IoLocationOutline, IoLogoFacebook, IoLogoInstagram, IoLogoMedium, IoLogoTwitter, IoMailOutline, IoPhonePortraitOutline } from "react-icons/io5";
 import Image from "next/image";
 import avatar from "@/public/my-avatar.png";
 import { useState } from "react";
@@ -25,7 +25,7 @@ export default function SideBar(){
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 className="name" title="Richard hanrick">Soren D. Blank</h1>
 
           <p className="title">Web developer</p>
         </div>
@@ -53,7 +53,7 @@ export default function SideBar(){
             <div className="contact-info">
               <p className="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" className="contact-link">richard@example.com</a>
+              <a href="mailto:richard@example.com" className="contact-link">sorenblank0@gmail.com</a>
             </div>
 
           </li>
@@ -67,7 +67,7 @@ export default function SideBar(){
             <div className="contact-info">
               <p className="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" className="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+12133522795" className="contact-link">Mail me ~</a>
             </div>
 
           </li>
@@ -81,7 +81,7 @@ export default function SideBar(){
             <div className="contact-info">
               <p className="contact-title">Birthday</p>
 
-              <time dateTime="1982-06-23">June 23, 1982</time>
+              <time dateTime="2004-11-01">November 1</time>
             </div>
 
           </li>
@@ -95,7 +95,7 @@ export default function SideBar(){
             <div className="contact-info">
               <p className="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Earth, MilkyWay</address>
             </div>
 
           </li>
@@ -107,22 +107,29 @@ export default function SideBar(){
         <ul className="social-list">
 
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a href="https://fb.me/soren.blank.0" className="social-link">
               <IoLogoFacebook />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a href="https://twitter.com/soren_blank" className="social-link">
               <IoLogoTwitter />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a href="https://instagram.com/soren_blank" className="social-link">
               <IoLogoInstagram />
             </a>
           </li>
+
+          <li className="social-item">
+            <a href="https://medium.com/@sorenblank" className="social-link">
+              <IoLogoMedium />
+            </a>
+          </li>
+
 
         </ul>
 
