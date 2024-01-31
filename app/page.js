@@ -133,7 +133,7 @@ export default function About(){
             <div className="content-card" data-testimonials-item>
 
                 <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar1} alt="Daniel lewis" width={60} data-testimonials-avatar />
+                    <MyImage src={avatar1} alt="Daniel lewis" data-testimonials-avatar />
                 </figure>
 
                 <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
@@ -155,7 +155,7 @@ export default function About(){
             <div className="content-card" data-testimonials-item>
 
                 <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar2} alt="Jessica miller" width={60} data-testimonials-avatar />
+                    <MyImage src={avatar2} alt="Jessica miller" data-testimonials-avatar />
                 </figure>
 
                 <h4 className="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
@@ -177,7 +177,7 @@ export default function About(){
             <div className="content-card" data-testimonials-item>
 
                 <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar3} alt="Emily evans" width={60} data-testimonials-avatar />
+                    <MyImage src={avatar3} alt="Emily evans" data-testimonials-avatar />
                 </figure>
 
                 <h4 className="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
@@ -199,7 +199,7 @@ export default function About(){
             <div className="content-card" data-testimonials-item>
 
                 <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar4} alt="Henry william" width={60} data-testimonials-avatar />
+                    <MyImage src={avatar4} alt="Henry william" data-testimonials-avatar />
                 </figure>
 
                 <h4 className="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
@@ -235,10 +235,10 @@ export default function About(){
 
             <div className="modal-img-wrapper">
             <figure className="modal-avatar-box">
-                <MyImage src={avatar1} alt="Daniel lewis" width={80} data-modal-img />
+                <MyImage src={avatar1} alt="Daniel lewis" data-modal-img />
             </figure>
 
-            <MyImage src={quote} alt="quote icon" width={40} data-modal-quote />
+                <MyImage src={quote} alt="quote icon" width={40} data-modal-quote />
             </div>
 
             <div className="modal-content">

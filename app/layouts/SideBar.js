@@ -12,7 +12,6 @@ export default function SideBar(){
   const [isActive, setIsActive] = useState(false);
 
   const toggleActive = () => {
-    console.log('Button clicked');
     setIsActive(!isActive);
   };
 
@@ -31,7 +30,7 @@ export default function SideBar(){
           <p className="title">Web developer</p>
         </div>
 
-        <button onClick={()=>console.log("Button Clicked")} className="info_more-btn">
+        <button onClick={toggleActive} className="info_more-btn">
           <span>Show Contacts</span>
 
           <IoChevronDown className="ion-icon"/>

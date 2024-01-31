@@ -8,8 +8,6 @@ import { usePathname } from "next/navigation";
 export default function SideBar(){
 
     const pathname = usePathname();
-    console.log(pathname);
-
 
     return (
         <nav className="navbar">
@@ -21,7 +19,7 @@ export default function SideBar(){
           </li>
 
           <li className="navbar-item">
-            <Link href="/resume" className={pathname == "/" ? "navbar-link active" : "navbar-link"} data-nav-link>Resume</Link>
+            <Link href="/resume" className={pathname == "/resume" ? "navbar-link active" : "navbar-link"} data-nav-link>Resume</Link>
           </li>
 
           <li className="navbar-item">
