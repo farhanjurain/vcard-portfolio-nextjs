@@ -1,3 +1,5 @@
+"use client"
+
 import MyImage from "@/app/components/Image"
 import iconDesign from "@/public/icon-design.svg"
 import iconDev from "@/public/icon-dev.svg"
@@ -15,10 +17,42 @@ import logo5 from "@/public/logo-5-color.png"
 import logo6 from "@/public/logo-6-color.png"
 import quote from "@/public/icon-quote.svg"
 import Link from "next/link"
+import { useState } from "react"
 import { IoCloseOutline } from "react-icons/io5"
 import { IoCalendarOutline, IoChevronDown, IoLocationOutline, IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoMailOutline, IoPhonePortraitOutline } from "react-icons/io5"
 
 export default function About(){
+
+    const [modalActive, setModalActive] = useState(false);
+    const [modalData, setModalData] = useState({
+      imgSrc: '',
+      imgAlt: '',
+      title: '',
+      text: '',
+    });
+
+    const testimonials = [
+        { avatar: avatar1, name: 'Daniel Lewis', text: "Working with Richard Hanrick was an absolute pleasure. His expertise in crafting a compelling corporate identity truly impressed us. Richard's extensive experience and genuine concern for understanding our client needs set him apart. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+        { avatar: avatar2, name: 'Jessica Miller', text: "Richard Hanrick is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+        { avatar: avatar3, name: 'Emily Evans', text: "Richard Hanrick is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+        { avatar: avatar4, name: 'Henry William', text: "Richard Hanrick is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+      ];
+
+    
+    const handleTestimonialClick = (testimonial) => {
+        setModalData({
+          imgSrc: testimonial.avatar,
+          imgAlt: testimonial.name,
+          title: testimonial.name,
+          text: testimonial.text,
+        });
+        setModalActive(true);
+      };
+    
+    const closeModal = () => {
+        setModalActive(false);
+      };
+
   return (
     <article className="about active" data-page="about">
 
@@ -129,139 +163,50 @@ export default function About(){
 
         <ul className="testimonials-list has-scrollbar">
 
-            <li className="testimonials-item">
-            <div className="content-card" data-testimonials-item>
+        {testimonials.map((testimonial, index) => (
+            <li className="testimonials-item" key={index} onClick={() => handleTestimonialClick(testimonial)}>
+                <div className="content-card" data-testimonials-item>
 
-                <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar1} alt="Daniel lewis" data-testimonials-avatar />
-                </figure>
+                    <figure className="testimonials-avatar-box">
+                        <MyImage src={testimonial.avatar} alt={testimonial.name} data-testimonials-avatar />
+                    </figure>
 
-                <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                    <h4 className="h4 testimonials-item-title" data-testimonials-title>{testimonial.name}</h4>
 
-                <div className="testimonials-text" data-testimonials-text>
-                <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                    <div className="testimonials-text" data-testimonials-text>
+                    <p>
+                        {testimonial.text}
+                    </p>
+                    </div>
                 </div>
-
-            </div>
             </li>
-
-            <li className="testimonials-item">
-            <div className="content-card" data-testimonials-item>
-
-                <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar2} alt="Jessica miller" data-testimonials-avatar />
-                </figure>
-
-                <h4 className="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div className="testimonials-text" data-testimonials-text>
-                <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-                </div>
-
-            </div>
-            </li>
-
-            <li className="testimonials-item">
-            <div className="content-card" data-testimonials-item>
-
-                <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar3} alt="Emily evans" data-testimonials-avatar />
-                </figure>
-
-                <h4 className="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div className="testimonials-text" data-testimonials-text>
-                <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-                </div>
-
-            </div>
-            </li>
-
-            <li className="testimonials-item">
-            <div className="content-card" data-testimonials-item>
-
-                <figure className="testimonials-avatar-box">
-                    <MyImage src={avatar4} alt="Henry william" data-testimonials-avatar />
-                </figure>
-
-                <h4 className="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div className="testimonials-text" data-testimonials-text>
-                <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-                </div>
-
-            </div>
-            </li>
-
+          ))}
+        
         </ul>
-
         </section>
 
-
-
-        <div className="modal-container" data-modal-container>
-
-        <div className="overlay" data-overlay></div>
-
-        <section className="testimonials-modal">
-
-            <button className="modal-close-btn" data-modal-close-btn>
-                <IoCloseOutline className="ion-icon" />
+        {modalActive && (
+        <div className="modal-container active" data-modal-container>
+          <div className="overlay active" data-overlay onClick={closeModal}></div>
+          <section className="testimonials-modal">
+            <button className="modal-close-btn" data-modal-close-btn onClick={closeModal}>
+              <IoCloseOutline className="ion-icon" />
             </button>
-
             <div className="modal-img-wrapper">
-            <figure className="modal-avatar-box">
-                <MyImage src={avatar1} alt="Daniel lewis" data-modal-img />
-            </figure>
-
-                <MyImage src={quote} alt="quote icon" width={40} data-modal-quote />
+              <figure className="modal-avatar-box">
+                <MyImage src={modalData.imgSrc} alt={modalData.imgAlt} data-modal-img />
+              </figure>
+              <MyImage src={quote} class="quote-icon" alt="quote icon" data-modal-quote />
             </div>
-
             <div className="modal-content">
-
-            <h4 className="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-            <time dateTime="2021-06-14">14 June, 2021</time>
-
-            <div data-modal-text>
-                <p>
-                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                lot of experience
-                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                consectetur adipiscing
-                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+              <h4 className="h3 modal-title" data-modal-title>{modalData.title}</h4>
+              <div data-modal-text>
+                <p>{modalData.text}</p>
+              </div>
             </div>
-
-            </div>
-
-        </section>
-
+          </section>
         </div>
+      )}
 
 
         <section className="clients">

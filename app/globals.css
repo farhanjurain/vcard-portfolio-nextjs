@@ -703,6 +703,10 @@ main {
   line-height: 1.6;
 }
 
+.quote-icon{
+  filter: invert(1);
+}
+
 
 /**
  * #clients 
