@@ -2,7 +2,7 @@
 
 import "@/app/globals.css";
 import {IoCalendarOutline, IoChevronDown, IoLocationOutline, IoLogoFacebook, IoLogoInstagram, IoLogoMedium, IoLogoTwitter, IoMailOutline, IoPhonePortraitOutline } from "react-icons/io5";
-import Image from "next/image";
+import MyImage from "../components/Image";
 import avatar from "@/public/my-avatar.png";
 import { useState } from "react";
 
@@ -21,11 +21,11 @@ export default function SideBar(){
       <div className="sidebar-info">
 
         <figure className="avatar-box">
-          <Image src={avatar} alt="Richard hanrick" width="80" unoptimized={true}/>
+          <MyImage src={avatar} alt="Soren D. Blank" width="80" />
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Richard hanrick">Soren D. Blank</h1>
+          <h1 className="name" title="Soren D. Blank">Soren D. Blank</h1>
 
           <p className="title">Web developer</p>
         </div>

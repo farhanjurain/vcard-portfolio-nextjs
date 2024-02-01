@@ -1,9 +1,10 @@
 import Image from 'next/image';
 
-const MyImage = ({...props }) => {
+const MyImage = ({ alt = '', ...props }) => {
   return (
     <Image
       unoptimized={true}
+      alt={alt}
       {...props}
     />
   );
