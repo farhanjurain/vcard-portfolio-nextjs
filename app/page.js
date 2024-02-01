@@ -22,6 +22,15 @@ import { IoCloseOutline } from "react-icons/io5"
 
 export default function About(){
 
+    const clients = [
+      { logo: logo1, alt: 'client logo', link: '#'},
+      { logo: logo2, alt: 'client logo', link: '#'},
+      { logo: logo3, alt: 'client logo', link: '#'},
+      { logo: logo4, alt: 'client logo', link: '#'},
+      { logo: logo5, alt: 'client logo', link: '#'},
+      { logo: logo6, alt: 'client logo', link: '#'},
+    ];
+
     const [modalActive, setModalActive] = useState(false);
     const [modalData, setModalData] = useState({
       imgSrc: '',
@@ -31,10 +40,10 @@ export default function About(){
     });
 
     const testimonials = [
-        { avatar: avatar1, name: 'Daniel Lewis', text: "Working with Richard Hanrick was an absolute pleasure. His expertise in crafting a compelling corporate identity truly impressed us. Richard's extensive experience and genuine concern for understanding our client needs set him apart. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
-        { avatar: avatar2, name: 'Jessica Miller', text: "Richard Hanrick is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
-        { avatar: avatar3, name: 'Emily Evans', text: "Richard Hanrick is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
-        { avatar: avatar4, name: 'Henry William', text: "Richard Hanrick is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+        { avatar: avatar1, name: 'Daniel Lewis', text: "Working with Soren D. was an absolute pleasure. His expertise in crafting a compelling corporate identity truly impressed us. Richard's extensive experience and genuine concern for understanding our client needs set him apart. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+        { avatar: avatar2, name: 'Jessica Miller', text: "Soren D. is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+        { avatar: avatar3, name: 'Emily Evans', text: "Soren D. is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
+        { avatar: avatar4, name: 'Henry William', text: "Soren D. is a creative and talented designer. He designed a corporate identity for our company. We were very pleased with the work done. Richard has a lot of experience and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We are delighted with the outcome and highly recommend Richard for his exceptional work." },
       ];
 
     
@@ -213,41 +222,13 @@ export default function About(){
 
         <ul className="clients-list has-scrollbar">
 
-            <li className="clients-item">
-            <Link href="#">
-                <MyImage src={logo1} alt="client logo" />
+        {clients.map((client, index) => (
+          <li className="clients-item" key={index}>
+            <Link href={client.link}>
+              <MyImage src={client.logo} alt={client.alt} />
             </Link>
-            </li>
-
-            <li className="clients-item">
-            <Link href="#">
-                <MyImage src={logo2} alt="client logo" />
-            </Link>
-            </li>
-
-            <li className="clients-item">
-            <Link href="#">
-                <MyImage src={logo3} alt="client logo" />
-            </Link>
-            </li>
-
-            <li className="clients-item">
-            <Link href="#">
-                <MyImage src={logo4} alt="client logo" />
-            </Link>
-            </li>
-
-            <li className="clients-item">
-            <Link href="#">
-                <MyImage src={logo5} alt="client logo" />
-            </Link>
-            </li>
-
-            <li className="clients-item">
-            <Link href="#">
-                <MyImage src={logo6} alt="client logo"/>
-            </Link>
-            </li>
+          </li>
+      ))}
 
         </ul>
 

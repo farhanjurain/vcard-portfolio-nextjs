@@ -23,15 +23,15 @@ export default function SideBar(){
           </li>
 
           <li className="navbar-item">
-            <Link href="/portfolio" className={pathname == "/" ? "navbar-link active" : "navbar-link"} data-nav-link>Portfolio</Link>
+            <Link href="/portfolio" className={pathname == "/portfolio" ? "navbar-link active" : "navbar-link"} data-nav-link>Portfolio</Link>
           </li>
 
           <li className="navbar-item">
-            <Link href="/blog" className={pathname == "/" ? "navbar-link active" : "navbar-link"} data-nav-link>Blog</Link>
+            <Link href="/blog" className={pathname == "/blog" ? "navbar-link active" : "navbar-link"} data-nav-link>Blog</Link>
           </li>
 
           <li className="navbar-item">
-            <Link href="/contact" className={pathname == "/" ? "navbar-link active" : "navbar-link"} data-nav-link>Contact</Link>
+            <Link href="/contact" className={pathname == "/contact" ? "navbar-link active" : "navbar-link"} data-nav-link>Contact</Link>
           </li>
 
         </ul>
