@@ -70,7 +70,7 @@ export default function About(){
 
         <section className="about-text">
         <p>
-            I'm a Programmer and I am currently working in web development and tech sector.
+            I&apos;m a Programmer and I am currently working in web development and tech sector.
             I enjoy turning complex problems into simple, beautiful and intuitive things.
         </p>
 
@@ -88,7 +88,7 @@ export default function About(){
 
         <section className="service">
 
-        <h3 className="h3 service-title">What i'm doing</h3>
+        <h3 className="h3 service-title">What i&apos;m doing</h3>
 
         <ul className="service-list">
 
