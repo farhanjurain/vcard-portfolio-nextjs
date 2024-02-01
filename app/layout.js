@@ -1,6 +1,7 @@
 import "./globals.css";
 import SideBar from "./layouts/SideBar";
 import NavBar from "./layouts/NavBar";
+import Head from "next/head";
 
 const metadata = {
   title: "Soren D. Blank",
