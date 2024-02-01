@@ -6,7 +6,7 @@ import Head from "next/head";
 const metadata = {
   title: "Soren D. Blank",
   description: "Im gonna be the king of the pirates.",
-  image: embed,
+  image: "https://next-vcard-portfolio.vercel.app/embed.png",
   keywords: ["Soren", "Blank", "Soren D. Blank", "Soren Blank"],
   "og:title" : "Soren D. Blank",
   "og:description" : "Im gonna be the king of the pirates.",
