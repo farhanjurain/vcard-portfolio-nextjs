@@ -1,7 +1,6 @@
 import "./globals.css";
 import SideBar from "./layouts/SideBar";
 import NavBar from "./layouts/NavBar";
-import ogImage from "@/public/og-img.png"
 
 // export const metadata = {
 //   title: "Soren D. Blank",
@@ -26,18 +25,14 @@ export const metadata = {
 
     images: [
       {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height
+        url: "https://next-vcard-portfolio.vercel.app/og-img.png",
       },
     ],
   },
   twitter: {
     images: [
       {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height
+        url: "https://next-vcard-portfolio.vercel.app/og-img.png",
       },
     ]
   },
