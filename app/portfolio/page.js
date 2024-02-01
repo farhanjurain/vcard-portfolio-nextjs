@@ -33,22 +33,23 @@ export default function Portfolio(){
         { src: Project9, link : "#", alt: "arrival", title: "Arrival", category: "Web development" },
       ];
     
-        useEffect(() => {
-        if (selectedCategory === 'All') {
-            setFilteredProjects(projects);
-        } else {
-            setFilteredProjects(projects.filter(project => project.category === selectedCategory));
-        }
-        }, [selectedCategory]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => {
+    if (selectedCategory === 'All') {
+        setFilteredProjects(projects);
+    } else {
+        setFilteredProjects(projects.filter(project => project.category === selectedCategory));
+    }
+    }, [selectedCategory]);
 
-        const handleSelectBoxClick = () => {
-            setIsSelectBoxActive(!isSelectBoxActive);
-          };
+    const handleSelectBoxClick = () => {
+        setIsSelectBoxActive(!isSelectBoxActive);
+      };
 
-        const handleCategoryChange = (category) => {
-            setSelectedCategory(category);
-            setIsSelectBoxActive(false);
-          };
+    const handleCategoryChange = (category) => {
+        setSelectedCategory(category);
+        setIsSelectBoxActive(false);
+      };
 
 
     return (
