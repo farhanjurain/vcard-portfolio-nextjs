@@ -1,6 +1,6 @@
 "use client"
 
-import { IoBookOutline, IoChevronDown, IoEyeOutline } from "react-icons/io5";
+import { IoChevronDown, IoEyeOutline } from "react-icons/io5";
 import "@/app/globals.css";
 import { useState, useEffect } from 'react';
 import MyImage from "@/app/components/Image"
