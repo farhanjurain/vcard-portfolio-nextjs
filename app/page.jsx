@@ -70,16 +70,13 @@ export default function About(){
 
         <section className="about-text">
         <p>
-            I&apos;m a Programmer and I am currently working in web development and tech sector.
-            I enjoy turning complex problems into simple, beautiful and intuitive things.
+            FREE PALESTINE.FREE GAZA.
         </p>
 
         <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Standing with Palestine — from the river to the sea, advocating freedom, dignity, and urgent aid for those in need. 
+            A Bangladesh-based initiative for humanity.
+            
         </p>
         </section>
 
@@ -88,7 +85,7 @@ export default function About(){
 
         <section className="service">
 
-        <h3 className="h3 service-title">What i&apos;m doing</h3>
+        <h3 className="h3 service-title">What we&apos;re doing</h3>
 
         <ul className="service-list">
 
@@ -161,7 +158,7 @@ export default function About(){
         </section>
 
 
-        {/* testimonials */}
+        {/* Proofs */}
         
 
         <section className="testimonials">
