@@ -65,7 +65,7 @@ export default function About(){
     <article className="about active" data-page="about">
 
         <header>
-        <h2 className="h2 article-title">About me</h2>
+        <h2 className="h2 article-title">About us</h2>
         </header>
 
         <section className="about-text">
