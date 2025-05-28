@@ -25,9 +25,9 @@ export default function SideBar(){
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Soren D. Blank">Soren D. Blank</h1>
+          <h1 className="name" title="Soren D. Blank">To Trade Your Heart</h1>
 
-          <p className="title">Web developer</p>
+          <p className="title">A Bangladesh-based initiative for humanity</p>
         </div>
 
         <button onClick={toggleActive} className="info_more-btn">
@@ -79,9 +79,9 @@ export default function SideBar(){
             </div>
 
             <div className="contact-info">
-              <p className="contact-title">Birthday</p>
+              <p className="contact-title">Founded</p>
 
-              <time dateTime="2004-11-01">November 1</time>
+              <time dateTime="2004-11-01">April 17</time>
             </div>
 
           </li>
@@ -95,7 +95,7 @@ export default function SideBar(){
             <div className="contact-info">
               <p className="contact-title">Location</p>
 
-              <address>Earth, MilkyWay</address>
+              <address>Bangladesh</address>
             </div>
 
           </li>
@@ -107,26 +107,14 @@ export default function SideBar(){
         <ul className="social-list">
 
           <li className="social-item">
-            <a href="https://fb.me/soren.blank.0" className="social-link">
+            <a href="https://fb.me/totradeyourheart" className="social-link">
               <IoLogoFacebook />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="https://twitter.com/soren_blank" className="social-link">
-              <IoLogoTwitter />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="https://instagram.com/soren_blank" className="social-link">
+            <a href="https://instagram.com/totradeyourheart" className="social-link">
               <IoLogoInstagram />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="https://medium.com/@sorenblank" className="social-link">
-              <IoLogoMedium />
             </a>
           </li>
 
