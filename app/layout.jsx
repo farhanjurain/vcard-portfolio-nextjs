@@ -19,20 +19,20 @@ import NavBar from "./layouts/NavBar";
 export const metadata = {
   title: "To Trade Your Heart",
   description: "FREE PALESTINE.",
-  image: "https://next-vcard-portfolio.vercel.app/embed.png",
+  image: "https://i.ibb.co/1YK2QWV9/Blue-White-Modern-Digital-Marketing-Instagram-Post-Potrait.png",
   keywords: ["To Trade Your Heart", "TTYH", "Trade Your Heart"],
   openGraph: {
 
     images: [
       {
-        url: "https://next-vcard-portfolio.vercel.app/og-img.png",
+        url: "https://i.ibb.co/1YK2QWV9/Blue-White-Modern-Digital-Marketing-Instagram-Post-Potrait.png",
       },
     ],
   },
   twitter: {
     images: [
       {
-        url: "https://next-vcard-portfolio.vercel.app/og-img.png",
+        url: "https://i.ibb.co/1YK2QWV9/Blue-White-Modern-Digital-Marketing-Instagram-Post-Potrait.png",
       },
     ]
   },
