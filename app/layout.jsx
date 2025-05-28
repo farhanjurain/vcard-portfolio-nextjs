@@ -17,10 +17,10 @@ import NavBar from "./layouts/NavBar";
 // };
 
 export const metadata = {
-  title: "Soren D. Blank",
-  description: "Im gonna be the king of the pirates.",
+  title: "To Trade Your Heart",
+  description: "FREE PALESTINE.",
   image: "https://next-vcard-portfolio.vercel.app/embed.png",
-  keywords: ["Soren", "Blank", "Soren D. Blank", "Soren Blank"],
+  keywords: ["To Trade Your Heart", "TTYH", "Trade Your Heart"],
   openGraph: {
 
     images: [
